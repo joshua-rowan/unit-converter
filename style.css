@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: #F4F4F4;
 }
 
 #hero {
@@ -23,6 +24,7 @@ body {
     color: #FFFFFF;
     border-radius: 6px;
     text-align: center;
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 #num::-webkit-inner-spin-button{
@@ -35,4 +37,40 @@ body {
 
 #num:focus {
     outline: none;
+}
+
+#convert-btn {
+    background-color: #FFFFFF;
+    width: 117px;
+    height: 42px;
+    border: 0px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.result-div {
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 109px;
+    text-align: center;
+    margin: 25px 5px 0px 5px;
+}
+
+h2 {
+    font-weight: 600px;
+    font-size: 20px;
+    color: #5A537B;
+}
+
+p {
+    font-weight: 400px;
+    font-size: 14px;
 }
