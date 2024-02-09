@@ -3,6 +3,7 @@ const convertBtn = document.getElementById("convert-btn")
 const lengthEl = document.getElementById("length-results")
 const volumeEl = document.getElementById("volume-results")
 const massEl = document.getElementById("mass-results")
+const resultsEl = document.getElementById("results")
 // inputEl.value = 25
 const number = inputEl.value
 
@@ -47,12 +48,19 @@ function poundsToKilos(num) {
 }
 
 convertBtn.addEventListener("click", function(){
-    console.log(inputEl.value)
+    let newNumber = inputEl.value
+    console.log(newNumber)
+    resultsEl.innerHTML = `<div id="results">
+    <div class="result-div">
+        <h2>Length (Meter/Feet)</h2>
+        <p id="length-results"id="length-results"> ${newNumber} meters to ${metersToFeet(newNumber)} feet | ${newNumber} feet to ${feetToMeters(newNumber)} meters</p>
+    </div>
+    <div class="result-div">
+        <h2>Volume (Liters/Gallons)</h2>
+        <p id="volume-results">${newNumber} liters to ${litersToGallons(newNumber)} gallons | ${newNumber} gallons to ${gallonsToLiters(newNumber)} liters</p>
+    </div>
+    <div class="result-div" >
+        <h2>Mass (Kilograms/Pounds)</h2>
+        <p id="mass-results">${newNumber} kilos to ${kilosToPounds(newNumber)} pounds | ${newNumber} pounds to ${poundsToKilos(newNumber)} kilos</p>
+    </div>`
 })
-
-metersToFeet(number)
-feetToMeters(number)
-litersToGallons(number)
-gallonsToLiters(number)
-kilosToPounds(number)
-poundsToKilos(number)
