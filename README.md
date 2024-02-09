@@ -1,6 +1,6 @@
 # unit-converter
 Quickly convert metric to imperial units
-`https://unit-converter-by-joshua.netlify.app/`
+[`https://unit-converter-by-joshua.netlify.app/`](https://unit-converter-by-joshua.netlify.app/)
 
 ## TABLE OF CONTENTS
 
